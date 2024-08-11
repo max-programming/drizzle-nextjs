@@ -1,31 +1,6 @@
-"use client";
-
-import type { FormEvent } from "react";
-import toast from "react-hot-toast";
-import { contactUsAction } from "../actions";
-
 export function ContactForm() {
-  async function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-
-    const form = e.target as HTMLFormElement;
-    const formData = new FormData(form);
-
-    const loadingToast = toast.loading("Sending message...");
-
-    const res = await contactUsAction(formData);
-    toast.dismiss(loadingToast);
-
-    if (res.success) {
-      toast.success(res.message);
-      form.reset();
-    } else {
-      toast.error(res.message);
-    }
-  }
-
   return (
-    <form className="flex items-center flex-col gap-3" onSubmit={handleSubmit}>
+    <form className="flex items-center flex-col gap-3">
       <h2 className="text-2xl font-semibold">Contact Us</h2>
       <input
         type="name"
@@ -46,7 +21,7 @@ export function ContactForm() {
       ></textarea>
       <button
         type="submit"
-        className="text-lg w-full bg-blue-800 text-white rounded-md p-2.5 focus:ring-2 focus:ring-blue-300 g-recaptcha"
+        className="text-lg w-full bg-blue-800 text-white rounded-md p-2.5 focus:ring-2 focus:ring-blue-300 disabled:bg-gray-300 disabled:text-gray-500 disabled:cursor-not-allowed disabled:ring-gray-300 focus:outline-none"
       >
         Submit
       </button>
