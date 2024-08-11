@@ -4,7 +4,7 @@ This is the code for the tutorial of **How to use Drizzle ORM in Next.js App Rou
 
 This branch contains the starter code.
 
-For the final code, checkout the [`final`](https://github.com/max-programming/drizzle-nextjs-setup/tree/final) branch.
+For the final code, checkout the [`final`](https://github.com/max-programming/drizzle-nextjs/tree/final) branch.
 
 ## How to use
 
