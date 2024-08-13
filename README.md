@@ -1,10 +1,12 @@
 ## Using Drizzle ORM With Next.js App Router
 
-This is the code for the tutorial of **How to use Drizzle ORM in Next.js App Router | Explained with project**.
+[![YouTube](http://i.ytimg.com/vi/SxuPB-04Tdw/hqdefault.jpg)](https://www.youtube.com/watch?v=w-SxuPB-04Tdw)
+
+This is the code for the tutorial [**How to use Drizzle ORM in Next.js App Router | Explained with project**](https://youtu.be/SxuPB-04Tdw).
 
 This branch contains the final code.
 
-For the initial code, checkout the [`main`](https://github.com/max-programming/drizzle-nextjs) branch.
+For the starter code, check out the [`main`](https://github.com/max-programming/drizzle-nextjs) branch.
 
 ## How to use
 
